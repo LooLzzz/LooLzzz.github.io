@@ -1,10 +1,10 @@
 import React from 'react';
 import { useSpring } from 'react-spring';
-// UPDATE this path to your copy of the hook!
+
 // Source here: https://joshwcomeau.com/snippets/react-hooks/use-prefers-reduced-motion
 // import usePrefersReducedMotion from '@hooks/use-prefers-reduced-motion.hook';
 
-function useBoop({
+export default function useBoop({
     x = 0,
     y = 0,
     rotation = 0,
@@ -50,5 +50,3 @@ function useBoop({
     let appliedStyle = style;
     return [appliedStyle, trigger];
 }
-
-export default useBoop;
