@@ -39,7 +39,7 @@ export default function useBoop({
         );
         
         return () => window.clearTimeout(timeoutId)
-    }, [isBooped]);
+    }, [isBooped, timing]);
 
     const trigger = React.useCallback(
         () => setIsBooped(true),
